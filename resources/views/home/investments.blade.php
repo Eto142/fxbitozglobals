@@ -241,7 +241,7 @@
       <div class="section-intro">
         <h3 class="title">Investment Proposals </h3>
         <div class="section-intro__description">
-          <p style="margin-top: -20px;">fxbitozglobal.com's employees ensure that every investor in our company can earn
+          <p style="margin-top: -20px;">fxbitozglobals.com's employees ensure that every investor in our company can earn
             money</p>
         </div>
       </div>
@@ -650,7 +650,7 @@
               </h4>
             </div>
             <div class="limits-warning__content">
-              <p>These commissions are charged by fxbitozglobal.com for the platform to work. They are not related to the
+              <p>These commissions are charged by fxbitozglobals.com for the platform to work. They are not related to the
                 profit received by our investors</p>
             </div>
           </div>
@@ -663,7 +663,7 @@
                 <li>
                   <h4>COMPANY COMMISSION</h4>
                   <p><span class="color-primary">0.5%</span> from the received profit by the robot. This commission
-                    shows the earnings of the entire fxbitozglobal.com structure, namely, each employee.</p>
+                    shows the earnings of the entire fxbitozglobals.com structure, namely, each employee.</p>
                 </li>
                 <li>
                   <h4>ADMINISTRATIVE COMMISSION</h4>
@@ -679,7 +679,7 @@
                 <li>
                   <h4>COMPANY COMMISSION</h4>
                   <p><span class="color-primary">0.5%</span> from the received profit by the robot. This commission
-                    shows the earnings of the entire fxbitozglobal.com structure, namely, each employee.</p>
+                    shows the earnings of the entire fxbitozglobals.com structure, namely, each employee.</p>
                 </li>
                 <li>
                   <h4>ADMINISTRATIVE COMMISSION</h4>
@@ -695,7 +695,7 @@
                 <li>
                   <h4>COMPANY COMMISSION</h4>
                   <p><span class="color-primary">0.5%</span> from the received profit by the robot. This commission
-                    shows the earnings of the entire fxbitozglobal.com structure, namely, each employee.</p>
+                    shows the earnings of the entire fxbitozglobals.com structure, namely, each employee.</p>
                 </li>
                 <li>
                   <h4>ADMINISTRATIVE COMMISSION</h4>
@@ -918,7 +918,7 @@ calc(false);
         <h3 class="title">BEST TRADERS ON THE MARKET</h3>
         <div class="section-intro__description">
           <p>The best cryptocurrency developers works in our company. They have a wealth of experience and understanding
-            of the crypto market behind them. They brought fxbitozglobal.com to the world level of development</p>
+            of the crypto market behind them. They brought fxbitozglobals.com to the world level of development</p>
         </div>
       </div>
       <div class="funds__slider swiper-container swiper-no-swiping js-swiper-funds">
@@ -950,7 +950,7 @@ calc(false);
               </div>
               <h4 class="funds-item__title">THE EXPERTS WILL DO EVERYTHING FOR YOU </h4>
               <div class="funds-item__description">
-                <p>The highly professional fxbitozglobal.com team controls all the processes of the trading robot around the
+                <p>The highly professional fxbitozglobals.com team controls all the processes of the trading robot around the
                   clock. After investing, you will observe the growth of your capital in real time</p>
               </div>
             </div>
@@ -1000,7 +1000,7 @@ calc(false);
                       <p class="company-info__label">Reg name:
                       </p>
                     </td>
-                    <td>fxbitozglobal.com</td>
+                    <td>fxbitozglobals.com</td>
                   </tr>
                   <tr>
                     <td>
@@ -1027,7 +1027,7 @@ calc(false);
             </p>
             <div class="typography">
               <blockquote>OFFICIAL LICENSE</blockquote>
-              <p>fxbitozglobal.com is registered and has official permission for investment and trading activities. The
+              <p>fxbitozglobals.com is registered and has official permission for investment and trading activities. The
                 services of our company are available to every investor from anywhere in the world.</p>
             </div>
           </div>
@@ -1189,7 +1189,7 @@ calc(false);
                 <div class="section-intro">
                   <h3 class="title">PAYMENT SYSTEMS </h3>
                   <div class="section-intro__description">
-                    <p>fxbitozglobal.com supports a variety payment systems</p>
+                    <p>fxbitozglobals.com supports a variety payment systems</p>
                   </div>
                 </div>
                 <div class="typography">

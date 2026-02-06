@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="CrATpF4qseMdsrhXsXdzV2Al8jdRp6y5CWKqFYER">
-    <title>fxbitozglobal.com | User Login</title>
+    <title>fxbitozglobals.com | User Login</title>
 
 
     <link rel="icon" href="account/storage/app/public/photos/uPYDzhfavicon.png1677339254" type="image/png" />
@@ -178,7 +178,7 @@
 
                                     <div class="text-center col-12">
                                         <p class="mt-4 mb-0"><small class="mr-2 text-dark">&copy; Copyright 2023 &nbsp;
-                                                fxbitozglobal.com &nbsp; All Rights Reserved.</small>
+                                                fxbitozglobals.com &nbsp; All Rights Reserved.</small>
                                         </p>
                                     </div>
                                 </div>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Transaction Receipt - fxbitozglobal.com</title>
+  <title>Transaction Receipt - fxbitozglobals.com</title>
   <style>
     body {
       margin: 0;
@@ -91,7 +91,7 @@
 <body>
   <div class="receipt-container">
     <div class="logo">
-      <img src="{{ asset('logo.png') }}" alt="fxbitozglobal.com Logo">
+      <img src="{{ asset('logo.png') }}" alt="fxbitozglobals.com Logo">
     </div>
 
     <div class="header">
@@ -123,7 +123,7 @@
     </div>
 
     <div class="footer">
-      © {{ date('Y') }} fxbitozglobal.com — All Rights Reserved<br>
+      © {{ date('Y') }} fxbitozglobals.com — All Rights Reserved<br>
       This is an automated receipt. Please do not reply.
     </div>
   </div>

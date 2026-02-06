@@ -2,7 +2,7 @@
 <html lang="en" data-theme="light" data-sidebar-behaviour="fixed" data-navigation-color="inverted" data-is-fluid="true">
 
 
-<!-- Mirrored from fxbitozglobal.com/forgot-password by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Apr 2025 17:47:42 GMT -->
+<!-- Mirrored from fxbitozglobals.com/forgot-password by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Apr 2025 17:47:42 GMT -->
 <!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -171,7 +171,7 @@
                 </p>
 
                 <!-- Form -->
-                <form method="POST" action="https://fxbitozglobal.com/forgot-password">
+                <form method="POST" action="https://fxbitozglobals.com/forgot-password">
                     <input type="hidden" name="_token" value="Lvafl4JvU48orBSjdIDdCkI5GtFPVJlewcAjqGQe">
                     <div class="row">
                         <div class="col-12">
@@ -230,6 +230,6 @@
 </body>
 
 
-<!-- Mirrored from fxbitozglobal.com/forgot-password by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Apr 2025 17:47:42 GMT -->
+<!-- Mirrored from fxbitozglobals.com/forgot-password by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 08 Apr 2025 17:47:42 GMT -->
 
 </html>

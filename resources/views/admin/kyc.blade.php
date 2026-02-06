@@ -7,7 +7,7 @@
 			<div class="alert alert-success mb-2">{{session('message')}}</div>
 			@endif
 			<div class="mt-2 mb-4">
-				<h1 class="title1 text-light">fxbitozglobal.com account verification list</h1>
+				<h1 class="title1 text-light">fxbitozglobals.com account verification list</h1>
 			</div>
 
 			<div class="mb-5 row">

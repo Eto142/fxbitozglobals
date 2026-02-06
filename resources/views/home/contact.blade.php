@@ -60,7 +60,7 @@
   <div class="contact-row">
     <div class="contact-item">
       <span class="contact-icon">📧</span>
-      <a href="mailto:support@fxbitozglobal.com" style ="color:white">support@fxbitozglobal.com</a>
+      <a href="mailto:support@fxbitozglobals.com" style ="color:white">support@fxbitozglobals.com</a>
     </div>
     <div class="contact-item">
       <span class="contact-icon">📞</span>

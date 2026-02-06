@@ -152,7 +152,7 @@ td.value {
 <body>
 <div class="container">
         <div class="logo">
-      <img src="{{ asset('logo.png') }}" alt="fxbitozglobal.com Logo">
+      <img src="{{ asset('logo.png') }}" alt="fxbitozglobals.com Logo">
     </div>
 
 

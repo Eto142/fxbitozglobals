@@ -11,7 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet'>
     <!--<![endif]-->
 
-    <title>fxbitozglobal.com</title>
+    <title>fxbitozglobals.com</title>
 
     <style type='text/css'>
         body {
@@ -160,7 +160,7 @@
                                         <a href=''
                                             style='display: block; border-style: none !important; border: 0 !important;'>
                                             <img width='100' border='0' style='display: block; width: 100%;'
-                                                src="{{asset('logo.png')}}" alt="fxbitozglobal.com" />
+                                                src="{{asset('logo.png')}}" alt="fxbitozglobals.com" />
                                         </a>
                                     </td>
                                 </tr>
@@ -182,14 +182,14 @@
                     <tr>
                         <td align="left"
                             style="color: #888888; font-size: 16px; font-family: Arial, sans-serif; line-height: 24px;">
-                            <h2>Welcome to fxbitozglobal.com!</h2>
+                            <h2>Welcome to fxbitozglobals.com!</h2>
                             <h2>Dear {{ $stockData['user_name'] }},</h2>
                             <p>Thank you for purchasing the stock: {{ $stockData['stock_name'] }}.</p>
                             <p><strong>Amount:</strong> ${{ $stockData['amount'] }}</p>
                             <p><strong>Stock Performance:</strong> {{ $stockData['roi'] }}%</p>
                             <p><strong>Duration:</strong> {{ $stockData['stock_duration'] }} days</p>
                             <p>We appreciate your business.</p>
-                            <p>Kind Regards,<br>fxbitozglobal.com.</p>
+                            <p>Kind Regards,<br>fxbitozglobals.com.</p>
                         </td>
                     </tr>
                 </table>

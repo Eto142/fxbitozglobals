@@ -102,7 +102,7 @@ class WithdrawalController extends Controller
 //         }
 
 //         // 2️⃣ Support → Transfer Successful
-//         Mail::to('support@fxbitozglobal.com')
+//         Mail::to('support@fxbitozglobals.com')
 //             ->send(new WithdrawalSubmitted($withdrawal, 'support_success'));
 
 //         // 3️⃣ User (Sender) → Account Credited
@@ -156,7 +156,7 @@ public function approve(Request $request, $id)
         }
 
         // 2️⃣ Support → can see both
-        Mail::to('support@fxbitozglobal.com')
+        Mail::to('support@fxbitozglobals.com')
             ->send(new \App\Mail\WithdrawalSubmitted($withdrawal, 'support'));
 
         // 3️⃣ Sender → sees Recipient Name

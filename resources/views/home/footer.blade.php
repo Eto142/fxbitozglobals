@@ -103,7 +103,7 @@
           <div class="footer__nav-col hidden-sm">
             <h4 class="footer-title">Email</h4>
             <ul class="footer__nav">
-              <li>support@fxbitozglobal.com</li>
+              <li>support@fxbitozglobals.com</li>
 
             </ul>
           </div>
@@ -119,7 +119,7 @@
     </div>
 
     <div class="footer__bottom">
-      <p>&copy; Copyright, <span>2024</span> fxbitozglobal.com All Rights Reserved</p>
+      <p>&copy; Copyright, <span>2024</span> fxbitozglobals.com All Rights Reserved</p>
       <ul>
         <li><a href="#">Privacy Policy</a></li>
     </div>

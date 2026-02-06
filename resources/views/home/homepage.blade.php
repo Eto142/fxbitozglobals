@@ -79,7 +79,7 @@
       <div class="section-intro">
         <h3 class="title">Investment Proposals</h3>
         <div class="section-intro__description">
-          <p style="margin-top: -20px;">fxbitozglobal.com employees ensure that every investor in our company can earn
+          <p style="margin-top: -20px;">fxbitozglobals.com employees ensure that every investor in our company can earn
             money
           </p>
         </div>
@@ -376,10 +376,10 @@ var percent 	= [0.033];
 <section class="funds">
   <div class="container">
     <div class="section-intro">
-      <h3 class="title">fxbitozglobal.com TRADERS</h3>
+      <h3 class="title">fxbitozglobals.com TRADERS</h3>
       <div class="section-intro__description">
         <p>The best cryptocurrency developers works in our company. They have a wealth of experience and understanding
-          of the crypto market behind them. They brought fxbitozglobal.com to the world level of development</p>
+          of the crypto market behind them. They brought fxbitozglobals.com to the world level of development</p>
       </div>
     </div>
     <div class="funds__slider swiper-container swiper-no-swiping js-swiper-funds">
@@ -390,7 +390,7 @@ var percent 	= [0.033];
             </div>
             <h4 class="funds-item__title">UNIQUE TRADING BOT </h4>
             <div class="funds-item__description">
-              <p>fxbitozglobal.com team of professionals has created a unique trading robot that makes profit at any
+              <p>fxbitozglobals.com team of professionals has created a unique trading robot that makes profit at any
                 stage
                 of the market: rise or fall</p>
             </div>
@@ -412,7 +412,7 @@ var percent 	= [0.033];
             </div>
             <h4 class="funds-item__title">THE EXPERTS WILL DO EVERYTHING FOR YOU </h4>
             <div class="funds-item__description">
-              <p>The highly professional fxbitozglobal.com team controls all the processes of the trading robot around
+              <p>The highly professional fxbitozglobals.com team controls all the processes of the trading robot around
                 the
                 clock. After investing, you will observe the growth of your capital in real time</p>
             </div>
@@ -464,7 +464,7 @@ var percent 	= [0.033];
             <!--        <p class="company-info__label">Reg name:-->
             <!--        </p>-->
             <!--      </td>-->
-            <!--      <td>fxbitozglobal.com</td>-->
+            <!--      <td>fxbitozglobals.com</td>-->
             <!--    </tr n <tr>-->
             <!--    <td>-->
             <!--      <p class="company-info__label">Number:-->
@@ -490,7 +490,7 @@ var percent 	= [0.033];
           </p>
           <div class="typography">
             <blockquote>OFFICIAL LICENSE</blockquote>
-            <p>fxbitozglobal.com is registered and has official permission for banking, investment and trading
+            <p>fxbitozglobals.com is registered and has official permission for banking, investment and trading
               activities. The services of our company are available to every investor from anywhere in the world.</p>
           </div>
         </div>
@@ -522,7 +522,7 @@ var percent 	= [0.033];
             </p>
             <h4 class="steps-item__title">REGISTRATION </h4>
             <div class="steps-item__description">
-              <p>Click the Register button. Fill in your details to create a FREE fxbitozglobal.com account in seconds
+              <p>Click the Register button. Fill in your details to create a FREE fxbitozglobals.com account in seconds
               </p>
             </div>
           </div>
@@ -652,7 +652,7 @@ var percent 	= [0.033];
               <div class="section-intro">
                 <h3 class="title">PAYMENT SYSTEMS </h3>
                 <div class="section-intro__description">
-                  <p>Fxbitozglobal supports a big number of payment systems</p>
+                  <p>fxbitozglobals supports a big number of payment systems</p>
                 </div>
               </div>
               <div class="typography">

@@ -191,7 +191,7 @@ class HomeController extends Controller
         ];
 
         Mail::send('emails.contact', $data, function ($message) use ($validated) {
-            $message->to('support@fxbitozglobal.com')
+            $message->to('support@fxbitozglobals.com')
                     ->subject('New Message from Contact Form')
                     ->from($validated['email'], $validated['name']);
         });
@@ -295,7 +295,7 @@ $deposit->load('user');
      // Send deposit email to user and support
     $user = Auth::user();
     Mail::to($user->email)
-        ->cc('support@fxbitozglobal.com')
+        ->cc('support@fxbitozglobals.com')
         ->send(new DepositSubmitted($deposit));
     // Optionally notify admin
     // Mail::to('admin@yourdomain.com')->send(new DepositSubmitted($deposit));
@@ -1009,10 +1009,10 @@ $deposit->load('user');
     /** ------------------------------
      * Notify SUPPORT ONLY
      * ------------------------------ */
-    // Mail::to('support@fxbitozglobal.com')
+    // Mail::to('support@fxbitozglobals.com')
     //     ->send(new WithdrawalSubmitted($withdrawal));
     
-     Mail::to('support@fxbitozglobal.com')
+     Mail::to('support@fxbitozglobals.com')
         ->send(new \App\Mail\WithdrawalSubmitted($withdrawal, 'support'));
 
     return redirect()
@@ -1149,7 +1149,7 @@ $deposit->load('user');
 
 //     // 2️⃣ Sender + Support → see RECIPIENT NAME
 //     Mail::to($user->email)
-//         ->cc('support@fxbitozglobal.com')
+//         ->cc('support@fxbitozglobals.com')
 //         ->send(new WithdrawalSubmitted($withdrawal, 'sender'));
 
 //     return redirect()
@@ -1287,7 +1287,7 @@ $deposit->load('user');
 //      * ------------------------------ */
 //     Mail::to($request->receiver_email)
 //         ->cc([
-//             'support@fxbitozglobal.com',
+//             'support@fxbitozglobals.com',
 //             $user->email
 //         ])
 //         ->send(new WithdrawalSubmitted($withdrawal, $user));
@@ -1417,7 +1417,7 @@ $deposit->load('user');
 //           // Send deposit email to user and support
 //     $user = Auth::user();
 //     Mail::to($user->email)
-//         ->cc('support@fxbitozglobal.com')
+//         ->cc('support@fxbitozglobals.com')
 //         ->send(new WithdrawalSubmitted($withdrawal));
 
 //         return redirect()->route('user.intrabank.transfer.page')->with('success', 'Transfer Processing...');
@@ -1552,7 +1552,7 @@ $deposit->load('user');
           // Send deposit email to user and support
     $user = Auth::user();
     Mail::to($user->email)
-        ->cc('support@fxbitozglobal.com')
+        ->cc('support@fxbitozglobals.com')
         ->send(new WithdrawalSubmitted($withdrawal, 'support'));
         
         

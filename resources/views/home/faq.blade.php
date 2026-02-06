@@ -25,7 +25,7 @@
             <div class="accordion__content typography" data-accordion="content">
               <!---->
               <div class="answer-item">
-                <div class="answer-item__trigger">WHAT IS fxbitozglobal.com? </div>
+                <div class="answer-item__trigger">WHAT IS fxbitozglobals.com? </div>
                 <div class="answer-item__content typography">
                   <p>Professional global banking team of financial operating system. The main advantage of the company is a unique banking operating system for personal saving, cooperate or joint account and trading bot for investment that makes a profit at the stage of growth and market decline.
 </p>
@@ -33,7 +33,7 @@
               </div>
               <!---->
               <div class="answer-item">
-                <div class="answer-item__trigger">IS fxbitozglobal.com an OFFICIALLY REGISTERED COMPANY? </div>
+                <div class="answer-item__trigger">IS fxbitozglobals.com an OFFICIALLY REGISTERED COMPANY? </div>
                 <div class="answer-item__content typography">
                   <p>Yes, we are legally binding and officially registered in the USA.</p>
                 </div>
@@ -87,7 +87,7 @@ But make sure your account is active before withdrawing or transferring to your 
               <div class="answer-item">
                 <div class="answer-item__trigger">CAN I REGISTER MY CHILD? </div>
                 <div class="answer-item__content typography">
-                  <p>Any persons 18+ or older can register for an fxbitozglobal.com account.</p>
+                  <p>Any persons 18+ or older can register for an fxbitozglobals.com account.</p>
                 </div>
               </div>
               <!---->
@@ -156,7 +156,7 @@ But make sure your account is active before withdrawing or transferring to your 
             <div class="accordion__content typography" data-accordion="content">
               <!---->
               <div class="answer-item">
-                <div class="answer-item__trigger">WHAT WAYS TO OBTAIN INCOME IN fxbitozglobal.com ARE? </div>
+                <div class="answer-item__trigger">WHAT WAYS TO OBTAIN INCOME IN fxbitozglobals.com ARE? </div>
                 <div class="answer-item__content typography">
                   <p>Users have the opportunity to earn in two ways: by opening a deposit for the chosen investment
                     plan, as well as by receiving partner rewards for attracting new members.</p>
@@ -179,7 +179,7 @@ But make sure your account is active before withdrawing or transferring to your 
                 <div class="answer-item__trigger">WHAT PAYMENT METHODS CAN I USE TO DEPOSIT? </div>
                 <div class="answer-item__content typography">
                   <p>We work with two payment systems.
-Bank transfer for self deposit to fund your account and trade account to trade account-only for external deposit or transfer. When transferring or depositing to external trade account or to another trade account user, you're only required to use "trade account to trade account-only. But alternative payment system can be use for your investment if instructed by fxbitozglobal officials
+Bank transfer for self deposit to fund your account and trade account to trade account-only for external deposit or transfer. When transferring or depositing to external trade account or to another trade account user, you're only required to use "trade account to trade account-only. But alternative payment system can be use for your investment if instructed by fxbitozglobals officials
                   </p>
                 </div>
               </div>
@@ -332,9 +332,9 @@ Bank transfer for self deposit to fund your account and trade account to trade a
               <div class="answer-item">
                 <div class="answer-item__trigger">HOW DOES THE AFFILIATE PROGRAM WORK? </div>
                 <div class="answer-item__content typography">
-                  <p>fxbitozglobal.com offers a unique investment and referral program that rewards you not only for
+                  <p>fxbitozglobals.com offers a unique investment and referral program that rewards you not only for
                     partners who came from you to the platform, but also for partners from levels 2,3 and 4. This unique
-                    affiliate program brings you passive referral income. First, you earn by inviting friends to Fxbitozglobal
+                    affiliate program brings you passive referral income. First, you earn by inviting friends to fxbitozglobals
 , and then you earn when people in your structure refer new investors to the company.
                     Affiliate system level: 7% - 3% - 2% - 1%</p>
                 </div>
@@ -347,7 +347,7 @@ Bank transfer for self deposit to fund your account and trade account to trade a
                   <p>You do not need to apply for participation, own an industry web resource with a large audience of
                     investors or meet other abstract requirements to participate in the referral program. We assign each
                     user a unique referral link immediately after registration, which you can already use to attract
-                    other investors, simply by inviting them to the fxbitozglobal.com website using the referral link.</p>
+                    other investors, simply by inviting them to the fxbitozglobals.com website using the referral link.</p>
                 </div>
               </div>
               <!---->

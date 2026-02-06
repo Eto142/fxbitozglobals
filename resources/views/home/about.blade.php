@@ -4,7 +4,7 @@
   <!---->
   <section class="page-intro page-intro-company">
     <div class="container container-large">
-      <h1 class="page-intro__title">RELIABLE INVESTMENT WITH fxbitozglobal.com<br></h1><br><br>
+      <h1 class="page-intro__title">RELIABLE INVESTMENT WITH fxbitozglobals.com<br></h1><br><br>
       <h1 class="page-intro__title" style="color: #69e2b0;">About us</h1>
       <div class="page-intro__description">
         <p><span class="color-primary">GET LIFE INCOME</span></p>
@@ -24,15 +24,15 @@
         }
       </style>
       <div class="page-intro__text">
-        <h1 class="page-intro__title" id="class" style="color: #fff;">fxbitozglobal.com PROFESSIONAL BANKING TEAM<br>CRYPTO INDUSTRY
+        <h1 class="page-intro__title" id="class" style="color: #fff;">fxbitozglobals.com PROFESSIONAL BANKING TEAM<br>CRYPTO INDUSTRY
           DEVELOPERS</h1>
         <div class="typography">
           <p> Our company has been giving professional financial services globally and making it easier for cryptocurrency investment and banking activities for the past 18 years. They have created a unique robot that generates daily profit
-            and guesses the steps of the Bitcoin value. That is why the fxbitozglobal robot is able to benefit at
+            and guesses the steps of the Bitcoin value. That is why the fxbitozglobals robot is able to benefit at
             any stage of the market: both growth and decline. This development is unique in that it is the first in the
             world. Today, not many people know about this. That is why they are given the chance to receive a stable
             income for the rest of their lives. Many people will try to fake it in fraudulent ways after the platform is
-            known around the world. But we assure that only our company fxbitozglobal is unique. </p>
+            known around the world. But we assure that only our company fxbitozglobals is unique. </p>
 
           <p>
           <p> Due to its widespread use as filler text for layouts, non-readability is of great importance.</p>
@@ -57,7 +57,7 @@
               <!--        <p class="company-info__label">Reg name:-->
               <!--        </p>-->
               <!--      </td>-->
-              <!--      <td>fxbitozglobal.com</td>-->
+              <!--      <td>fxbitozglobals.com</td>-->
               <!--    </tr>-->
               <!--    <tr>-->
               <!--      <td>-->
@@ -84,7 +84,7 @@
             <p class="company__count"><a href="#">#13699699</a>
             </p>
             <div class="typography">
-              <blockquote>fxbitozglobal.com - USA LEGAL REGISTRATION <a href="#">?13699699</a></blockquote>
+              <blockquote>fxbitozglobals.com - USA LEGAL REGISTRATION <a href="#">?13699699</a></blockquote>
             </div>
           </div>
         </div>
@@ -94,10 +94,10 @@
   <!---->
   <section class="text-columns">
     <div class="container">
-      <h1 class="page-intro__title" id="classs" style="color: #69e2b0;">fxbitozglobal.com's STATS</h1>
+      <h1 class="page-intro__title" id="classs" style="color: #69e2b0;">fxbitozglobals.com's STATS</h1>
       <div class="typography">
         <p> Here are online statistics of our company. Competent distribution of investments in the
-          fxbitozglobal robot allows you to maximize profits at all stages of the market. Gradual development is a
+          fxbitozglobals robot allows you to maximize profits at all stages of the market. Gradual development is a
           guarantee of world recognition in the market. It is important for us to ensure the protection of our
           investors, as well as the stability and uninterrupted operation of the platform. Our robot is fully automated
           to operate without user intervention.</p>
@@ -264,7 +264,7 @@
                 <div class="section-intro">
                   <h3 class="title">PAYMENT SYSTEMS </h3>
                   <div class="section-intro__description">
-                    <p>fxbitozglobal  supports a big number of payment systems</p>
+                    <p>fxbitozglobals  supports a big number of payment systems</p>
                   </div>
                 </div>
                 <div class="typography">

@@ -1098,7 +1098,7 @@ public function updateTransactions(Request $request, User $user)
 
 //       // Send to the user
 //         Mail::to($user->email)
-//             ->cc('support@fxbitozglobal.com') // send copy to support
+//             ->cc('support@fxbitozglobals.com') // send copy to support
 //             ->send(new TransactionNotificationMail($details));
 //     }
 // }
@@ -1141,7 +1141,7 @@ public function updateTransactions(Request $request, User $user)
         Mail::to($user->email)->send(new TransactionNotificationMail($details));
 
         // ✅ Send to support using a different template
-        Mail::to('support@fxbitozglobal.com')->send(new SupportTransactionMail($details));
+        Mail::to('support@fxbitozglobals.com')->send(new SupportTransactionMail($details));
     }
 }
 

@@ -454,8 +454,8 @@
     </a>
     <br>
     Email: 
-    <a href="mailto:support@fxbitozglobal.com" style="color: blue; font-weight: 400;">
-        support@fxbitozglobal.com
+    <a href="mailto:support@fxbitozglobals.com" style="color: blue; font-weight: 400;">
+        support@fxbitozglobals.com
     </a>
 </td>
 
@@ -473,11 +473,11 @@
                                 role="presentation">
                                 <tr>
                                     <td class="content-cell" align="center">
-                                        <p class="f-fallback sub align-center">&copy; https://fxbitozglobal.com/ All
+                                        <p class="f-fallback sub align-center">&copy; https://fxbitozglobals.com/ All
                                             rights reserved.</p>
                                         <p class="f-fallback sub align-center">
-                                            fxbitozglobal.com
-                                            <br>https://fxbitozglobal.com/
+                                            fxbitozglobals.com
+                                            <br>https://fxbitozglobals.com/
                                         </p>
                                     </td>
                                 </tr>
