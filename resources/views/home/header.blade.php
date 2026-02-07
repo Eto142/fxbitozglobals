@@ -7,7 +7,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>fxbitozglobals | #1 Trading Investment Platform with guaranteed returns</title>
+  <title>fxbitozglobals | #1 Global Bank Platform with guaranteed returns of Trading Investment 100%  security.</title>
   <meta name="description" content="">
   <link rel="icon" href="storage/app/public/photos/QdKEyMcH167GY17gRemDxDvmJwch7NV9fJVoxVcf.html" type="image/png" />
   <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.html">

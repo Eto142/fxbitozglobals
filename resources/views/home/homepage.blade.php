@@ -454,7 +454,7 @@ var percent 	= [0.033];
                 </p>
               </li>
             </ul>
-            <img src="temp/custom/assets/images/company/cert.jpg" alt="">
+            {{-- <img src="temp/custom/assets/images/company/cert.jpg" alt=""> --}}
           </div>
           <div class="company-info">
             <!--<table>-->
