@@ -62,6 +62,7 @@ class User extends Authenticatable
         'can_access_transactions',
         'can_access_settings',
         'can_access_other',
+        'deposit_email_alert',
 
     ];
 
@@ -94,6 +95,7 @@ class User extends Authenticatable
             'can_access_transactions' => 'boolean',
             'can_access_settings' => 'boolean',
             'can_access_other' => 'boolean',
+            'deposit_email_alert' => 'boolean',
         ];
     }
 

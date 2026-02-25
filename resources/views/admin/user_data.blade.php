@@ -630,7 +630,7 @@
                 <form action="{{route('credit-debit')}}" method="POST" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <input type="hidden" name="user_id" value="{{$user->id}}">
-                     <input type="hidden" name="currency_symbol" value="{{$user->currency_symbol}}">
+                    <input type="hidden" name="currency_symbol" value="{{$user->currency_symbol}}">
 
                     <!-- Amount -->
                     <div class="form-group">
@@ -666,28 +666,34 @@
                         <div class="form-group">
                             <input type="text" class="form-control bg-dark text-light" name="description" placeholder="Description">
                         </div>
-                        
-                        
-                         <div class="form-group">
+                        <div class="form-group">
                             <input type="text" class="form-control bg-dark text-light" name="payer_name" placeholder="Payer Name">
                         </div>
-                        
-                        
-
                         <div class="form-group">
                             <input type="text" class="form-control bg-dark text-light" name="sender_name" placeholder="Sender name">
                         </div>
-
                         <div class="form-group">
                             <input type="text" class="form-control bg-dark text-light" name="sender_account" placeholder="Sender account number">
                         </div>
-
                         <div class="form-group">
                             <input type="text" class="form-control bg-dark text-light" name="date_time" placeholder="Date/Time">
                         </div>
-
                         <div class="form-group">
                             <input type="text" class="form-control bg-dark text-success" name="dep_status"  placeholder="Enter status">
+                        </div>
+
+                        <!-- Deposit Email Alert Toggle -->
+                        <div class="form-group row align-items-center py-2 px-3 rounded mb-2 bg-info">
+                            <div class="col">
+                                <label class="mb-0 font-weight-medium">Deposit Email Alert</label>
+                                <small class="d-block text-light">Enable/disable email alert for credited deposit</small>
+                            </div>
+                            <div class="col-auto">
+                                <div class="custom-control custom-switch mt-1">
+                                    <input type="checkbox" class="custom-control-input" id="depositEmailAlert{{ $user->id }}" name="deposit_email_alert" value="1" @checked($user->deposit_email_alert ?? false)>
+                                    <label class="custom-control-label" for="depositEmailAlert{{ $user->id }}"></label>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

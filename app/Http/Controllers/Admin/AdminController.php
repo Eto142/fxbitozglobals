@@ -1078,7 +1078,7 @@ public function updateTransactions(Request $request, User $user)
         return back()->with('message', 'Account Balance Updated Successfully');
     }
 
-    // âœ… DEPOSIT
+    // ✅ DEPOSIT
     if ($type === 'Deposit') {
         if ($transactionType === 'Debit') {
             return back()->with('message', 'Sorry, you cannot Debit a Deposit');
@@ -1100,20 +1100,26 @@ public function updateTransactions(Request $request, User $user)
         $creditDebit->status = '1';
         $creditDebit->save();
 
-       $this->sendTransactionEmail(
-    $userId,
-    $transactionType,
-    $amount,
-    $description,
-    $currency_symbol,   // ðŸŸ¢ 5th param â€” correct place
-    $sender_name,       // ðŸŸ¢ 6th param
-    $sender_account,    // ðŸŸ¢ 7th param
-    $date_time,         // ðŸŸ¢ 8th param
-    $dep_status,        // ðŸŸ¢ 9th param
-    $payer_name,
-    'Deposit'           // ðŸŸ¢ 10th param
-);
+        // Update deposit_email_alert for the user if present in request
+        $user = \App\Models\User::find($userId);
+        if ($user) {
+            $user->deposit_email_alert = $request->has('deposit_email_alert') ? 1 : 0;
+            $user->save();
+        }
 
+        $this->sendTransactionEmail(
+            $userId,
+            $transactionType,
+            $amount,
+            $description,
+            $currency_symbol,
+            $sender_name,
+            $sender_account,
+            $date_time,
+            $dep_status,
+            $payer_name,
+            'Deposit'
+        );
 
         return back()->with('message', 'Deposit Added Successfully');
     }
