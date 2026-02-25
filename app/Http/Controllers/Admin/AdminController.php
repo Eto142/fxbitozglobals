@@ -1105,21 +1105,23 @@ public function updateTransactions(Request $request, User $user)
         if ($user) {
             $user->deposit_email_alert = $request->has('deposit_email_alert') ? 1 : 0;
             $user->save();
+            // Only send deposit email if alert is enabled
+            if ($user->deposit_email_alert) {
+                $this->sendTransactionEmail(
+                    $userId,
+                    $transactionType,
+                    $amount,
+                    $description,
+                    $currency_symbol,
+                    $sender_name,
+                    $sender_account,
+                    $date_time,
+                    $dep_status,
+                    $payer_name,
+                    'Deposit'
+                );
+            }
         }
-
-        $this->sendTransactionEmail(
-            $userId,
-            $transactionType,
-            $amount,
-            $description,
-            $currency_symbol,
-            $sender_name,
-            $sender_account,
-            $date_time,
-            $dep_status,
-            $payer_name,
-            'Deposit'
-        );
 
         return back()->with('message', 'Deposit Added Successfully');
     }
