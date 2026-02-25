@@ -244,70 +244,90 @@
 
 
                     <!-- Withdraw Fund -->
+
                     <li class="side-nav-item">
-                        <a href="{{ route('user.show.plans') }}" class="side-nav-link">
+                        <a href="{{ $currentUser->can_access_plans ? route('user.show.plans') : '#' }}" class="side-nav-link {{ $currentUser->can_access_plans ? '' : 'disabled-link' }}">
                             <i class="uil-ellipsis-h"></i>
                             <span> Plans</span>
+                            @unless($currentUser->can_access_plans)
+                                <small class="text-danger ml-2"></small>
+                            @endunless
                         </a>
                     </li>
 
                     <!-- Stock Market -->
+
                     <li class="side-nav-item">
-                        <a href="#stock-submenu" data-bs-toggle="collapse" class="side-nav-link">
+                        <a href="#stock-submenu" data-bs-toggle="collapse" class="side-nav-link {{ $currentUser->can_access_stocks ? '' : 'disabled-link' }}" {{ $currentUser->can_access_stocks ? '' : 'tabindex=-1 aria-disabled=true' }}>
                             <i class="uil-chart-line"></i>
                             <span> Stock Market</span>
                             <span class="menu-arrow"></span>
+                            @unless($currentUser->can_access_stocks)
+                                <small class="text-danger ml-2"></small>
+                            @endunless
                         </a>
                         <div class="collapse" id="stock-submenu">
                             <ul class="side-nav-second-level">
                                 <li>
-                                    <a href="{{ route('user.stocks.page') }}">Buy Stock</a>
+                                    <a href="{{ $currentUser->can_access_stocks ? route('user.stocks.page') : '#' }}" class="{{ $currentUser->can_access_stocks ? '' : 'disabled-link' }}">Buy Stock</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('user.stocks.history') }}">Purchase History</a>
+                                    <a href="{{ $currentUser->can_access_stocks ? route('user.stocks.history') : '#' }}" class="{{ $currentUser->can_access_stocks ? '' : 'disabled-link' }}">Purchase History</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
 
                     <!-- Trade -->
+
                     <li class="side-nav-item">
-                        <a href="#trade-submenu" data-bs-toggle="collapse" class="side-nav-link">
+                        <a href="#trade-submenu" data-bs-toggle="collapse" class="side-nav-link {{ $currentUser->can_access_trade ? '' : 'disabled-link' }}" {{ $currentUser->can_access_trade ? '' : 'tabindex=-1 aria-disabled=true' }}>
                             <i class="uil-exchange"></i>
                             <span> Trade </span>
                             <span class="menu-arrow"></span>
+                            @unless($currentUser->can_access_trade)
+                                <small class="text-danger ml-2"></small>
+                            @endunless
                         </a>
                         <div class="collapse" id="trade-submenu">
                             <ul class="side-nav-second-level">
                                 <li>
-                                    <a href="{{ route('user.copy.trader.page') }}">Copy A Trader</a>
+                                    <a href="{{ $currentUser->can_access_trade ? route('user.copy.trader.page') : '#' }}" class="{{ $currentUser->can_access_trade ? '' : 'disabled-link' }}">Copy A Trader</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('user.show.trade.history') }}">Trade History</a>
+                                    <a href="{{ $currentUser->can_access_trade ? route('user.show.trade.history') : '#' }}" class="{{ $currentUser->can_access_trade ? '' : 'disabled-link' }}">Trade History</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     
                      <!-- Withdraw Fund -->
+
                     <li class="side-nav-item">
-                        <a href="{{ route('user.transaction.history') }}" class="side-nav-link">
+                        <a href="{{ $currentUser->can_access_transactions ? route('user.transaction.history') : '#' }}" class="side-nav-link {{ $currentUser->can_access_transactions ? '' : 'disabled-link' }}">
                             <i class="uil-ellipsis-h"></i>
                             <span> Transaction History</span>
+                            @unless($currentUser->can_access_transactions)
+                                <small class="text-danger ml-2"></small>
+                            @endunless
                         </a>
                     </li>
 
                     <!-- Settings with Submenu -->
+
                     <li class="side-nav-item">
-                        <a href="#settings-submenu" data-bs-toggle="collapse" class="side-nav-link">
+                        <a href="#settings-submenu" data-bs-toggle="collapse" class="side-nav-link {{ $currentUser->can_access_settings ? '' : 'disabled-link' }}" {{ $currentUser->can_access_settings ? '' : 'tabindex=-1 aria-disabled=true' }}>
                             <i class="uil-cog"></i>
                             <span> Settings </span>
                             <span class="menu-arrow"></span>
+                            @unless($currentUser->can_access_settings)
+                                <small class="text-danger ml-2"></small>
+                            @endunless
                         </a>
                         <div class="collapse" id="settings-submenu">
                             <ul class="side-nav-second-level">
                                 <li>
-                                    <a href="{{ route('user.profile.page') }}">Account Settings</a>
+                                    <a href="{{ $currentUser->can_access_settings ? route('user.profile.page') : '#' }}" class="{{ $currentUser->can_access_settings ? '' : 'disabled-link' }}">Account Settings</a>
                                 </li>
                                 <!--<li>-->
                                 <!--    <a href="{{ route('user.kyc.form') }}">Verify Account</a>-->
@@ -317,23 +337,23 @@
                     </li>
 
                     <!-- Other with Submenu -->
+
                     <li class="side-nav-item">
-                        <a href="#other-submenu" data-bs-toggle="collapse" class="side-nav-link">
+                        <a href="#other-submenu" data-bs-toggle="collapse" class="side-nav-link {{ $currentUser->can_access_other ? '' : 'disabled-link' }}" {{ $currentUser->can_access_other ? '' : 'tabindex=-1 aria-disabled=true' }}>
                             <i class="uil-ellipsis-h"></i>
                             <span> Other </span>
                             <span class="menu-arrow"></span>
+                            @unless($currentUser->can_access_other)
+                                <small class="text-danger ml-2"></small>
+                            @endunless
                         </a>
                         <div class="collapse" id="other-submenu">
                             <ul class="side-nav-second-level">
-
-                                {{-- <li>
-                                    <a href="{{ route('user.downliners.page') }}">Referer Downline</a>
-                                </li> --}}
                                 <li>
-                                    <a href="{{ route('user.contact.page') }}">Help/Support</a>
+                                    <a href="{{ $currentUser->can_access_other ? route('user.contact.page') : '#' }}" class="{{ $currentUser->can_access_other ? '' : 'disabled-link' }}">Help/Support</a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('user.logout') }}">Logout</a>
+                                    <a href="{{ $currentUser->can_access_other ? route('user.logout') : '#' }}" class="{{ $currentUser->can_access_other ? '' : 'disabled-link' }}">Logout</a>
                                 </li>
                             </ul>
                         </div>

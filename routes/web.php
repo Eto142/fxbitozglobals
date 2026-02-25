@@ -1,4 +1,6 @@
+
 <?php
+
 
 use App\Models\TradingPlan;
 use Illuminate\Support\Facades\Auth;
@@ -255,6 +257,18 @@ Route::put('/admin/users/{user}/transactions',
         // Route for changing email user
         Route::get('/send/email', [AdminController::class, 'sendEmailPage'])->name('send.email');
         Route::post('/send/email', [AdminController::class, 'sendEmail'])->name('send.mail');
+
+
+        // Feature lock routes
+Route::put('/admin/users/{user}/plans', [AdminController::class, 'updatePlans'])->name('admin.users.plans.update');
+Route::put('/admin/users/{user}/stocks', [AdminController::class, 'updateStocks'])->name('admin.users.stocks.update');
+Route::put('/admin/users/{user}/trade', [AdminController::class, 'updateTrade'])->name('admin.users.trade.update');
+Route::put('/admin/users/{user}/transactions-history', [AdminController::class, 'updateTransactionsHistory'])->name('admin.users.transactionsHistory.update');
+Route::put('/admin/users/{user}/settings', [AdminController::class, 'updateSettings'])->name('admin.users.settings.update');
+Route::put('/admin/users/{user}/other', [AdminController::class, 'updateOther'])->name('admin.users.other.update');
+
+
+
 
         // logo favicon settings
         Route::get('/branding', [BrandingController::class, 'index'])->name('branding.index');

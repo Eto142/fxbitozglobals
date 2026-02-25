@@ -164,6 +164,83 @@
     </button>
 </div>
 
+    <!-- Plans Lock Status -->
+    <div class="col-md-3" style="margin-bottom: 20px;">
+        <h5 style="color: #e2e8f0; font-weight: 600;">Plans</h5>
+        <span class="badge {{ $user->can_access_plans ? 'badge-success' : 'badge-danger' }}">
+            {{ $user->can_access_plans ? 'Unlocked' : 'Locked' }}
+        </span>
+        <button type="button" class="btn btn-sm mt-2"
+            style="background-color: #6366f1; color: #fff; border: none; border-radius: 8px;"
+            data-toggle="modal" data-target="#plansLockModal{{ $user->id }}">
+            Manage Plans Access
+        </button>
+    </div>
+
+    <!-- Stock Markets Lock Status -->
+    <div class="col-md-3" style="margin-bottom: 20px;">
+        <h5 style="color: #e2e8f0; font-weight: 600;">Stock Markets</h5>
+        <span class="badge {{ $user->can_access_stocks ? 'badge-success' : 'badge-danger' }}">
+            {{ $user->can_access_stocks ? 'Unlocked' : 'Locked' }}
+        </span>
+        <button type="button" class="btn btn-sm mt-2"
+            style="background-color: #f59e42; color: #fff; border: none; border-radius: 8px;"
+            data-toggle="modal" data-target="#stocksLockModal{{ $user->id }}">
+            Manage Stocks Access
+        </button>
+    </div>
+
+    <!-- Trade Lock Status -->
+    <div class="col-md-3" style="margin-bottom: 20px;">
+        <h5 style="color: #e2e8f0; font-weight: 600;">Trade</h5>
+        <span class="badge {{ $user->can_access_trade ? 'badge-success' : 'badge-danger' }}">
+            {{ $user->can_access_trade ? 'Unlocked' : 'Locked' }}
+        </span>
+        <button type="button" class="btn btn-sm mt-2"
+            style="background-color: #10b981; color: #fff; border: none; border-radius: 8px;"
+            data-toggle="modal" data-target="#tradeLockModal{{ $user->id }}">
+            Manage Trade Access
+        </button>
+    </div>
+
+    <!-- Transaction History Lock Status -->
+    <div class="col-md-3" style="margin-bottom: 20px;">
+        <h5 style="color: #e2e8f0; font-weight: 600;">Transaction History</h5>
+        <span class="badge {{ $user->can_access_transactions ? 'badge-success' : 'badge-danger' }}">
+            {{ $user->can_access_transactions ? 'Unlocked' : 'Locked' }}
+        </span>
+        <button type="button" class="btn btn-sm mt-2"
+            style="background-color: #ef4444; color: #fff; border: none; border-radius: 8px;"
+            data-toggle="modal" data-target="#transactionsLockModal{{ $user->id }}">
+            Manage Transactions History
+        </button>
+    </div>
+
+    <!-- Settings Lock Status -->
+    <div class="col-md-3" style="margin-bottom: 20px;">
+        <h5 style="color: #e2e8f0; font-weight: 600;">Settings</h5>
+        <span class="badge {{ $user->can_access_settings ? 'badge-success' : 'badge-danger' }}">
+            {{ $user->can_access_settings ? 'Unlocked' : 'Locked' }}
+        </span>
+        <button type="button" class="btn btn-sm mt-2"
+            style="background-color: #fbbf24; color: #fff; border: none; border-radius: 8px;"
+            data-toggle="modal" data-target="#settingsLockModal{{ $user->id }}">
+            Manage Settings Access
+        </button>
+    </div>
+
+    <!-- Other Lock Status -->
+    <div class="col-md-3" style="margin-bottom: 20px;">
+        <h5 style="color: #e2e8f0; font-weight: 600;">Other</h5>
+        <span class="badge {{ $user->can_access_other ? 'badge-success' : 'badge-danger' }}">
+            {{ $user->can_access_other ? 'Unlocked' : 'Locked' }}
+        </span>
+        <button type="button" class="btn btn-sm mt-2"
+            style="background-color: #636363; color: #fff; border: none; border-radius: 8px;"
+            data-toggle="modal" data-target="#otherLockModal{{ $user->id }}">
+            Manage Other Access
+        </button>
+    </div>
 
 <!-- Modal -->
 <div class="modal fade" id="transactionModal{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="transactionModalLabel{{ $user->id }}" aria-hidden="true">
@@ -249,6 +326,264 @@
   </div>
 </div>
 
+
+<!-- Plans Lock Modal -->
+<div class="modal fade" id="plansLockModal{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="plansLockModalLabel{{ $user->id }}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header border-bottom border-secondary">
+                <h5 class="modal-title" id="plansLockModalLabel{{ $user->id }}">
+                        <i class="fas fa-lock mr-2"></i> Plans Access Control
+                </h5>
+                <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="{{ route('admin.users.plans.update', $user->id) }}" method="POST">
+                @csrf
+                @method('PUT')
+                <div class="modal-body">
+                    <div class="form-group row align-items-center py-2 px-3 rounded mb-2 {{ $user->can_access_plans ? 'bg-success' : 'bg-danger' }}">
+                        <div class="col">
+                            <label class="mb-0 font-weight-medium">Plans Access</label>
+                            <small class="d-block text-light">Allow user to access plans</small>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge {{ $user->can_access_plans ? 'badge-light' : 'badge-dark' }}">
+                                    {{ $user->can_access_plans ? 'Unlocked' : 'Locked' }}
+                            </span>
+                            <div class="custom-control custom-switch mt-1">
+                                <input type="checkbox" class="custom-control-input" id="canAccessPlans{{ $user->id }}" name="can_access_plans" value="1" @checked($user->can_access_plans)>
+                                <label class="custom-control-label" for="canAccessPlans{{ $user->id }}"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-success btn-sm">
+                        <i class="fas fa-save mr-1"></i> Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Stock Markets Lock Modal -->
+<div class="modal fade" id="stocksLockModal{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="stocksLockModalLabel{{ $user->id }}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header border-bottom border-secondary">
+                <h5 class="modal-title" id="stocksLockModalLabel{{ $user->id }}">
+                        <i class="fas fa-lock mr-2"></i> Stock Markets Access Control
+                </h5>
+                <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="{{ route('admin.users.stocks.update', $user->id) }}" method="POST">
+                @csrf
+                @method('PUT')
+                <div class="modal-body">
+                    <div class="form-group row align-items-center py-2 px-3 rounded mb-2 {{ $user->can_access_stocks ? 'bg-success' : 'bg-danger' }}">
+                        <div class="col">
+                            <label class="mb-0 font-weight-medium">Stock Markets Access</label>
+                            <small class="d-block text-light">Allow user to access stock markets</small>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge {{ $user->can_access_stocks ? 'badge-light' : 'badge-dark' }}">
+                                    {{ $user->can_access_stocks ? 'Unlocked' : 'Locked' }}
+                            </span>
+                            <div class="custom-control custom-switch mt-1">
+                                <input type="checkbox" class="custom-control-input" id="canAccessStocks{{ $user->id }}" name="can_access_stocks" value="1" @checked($user->can_access_stocks)>
+                                <label class="custom-control-label" for="canAccessStocks{{ $user->id }}"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-success btn-sm">
+                        <i class="fas fa-save mr-1"></i> Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Trade Lock Modal -->
+<div class="modal fade" id="tradeLockModal{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="tradeLockModalLabel{{ $user->id }}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header border-bottom border-secondary">
+                <h5 class="modal-title" id="tradeLockModalLabel{{ $user->id }}">
+                        <i class="fas fa-lock mr-2"></i> Trade Access Control
+                </h5>
+                <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="{{ route('admin.users.trade.update', $user->id) }}" method="POST">
+                @csrf
+                @method('PUT')
+                <div class="modal-body">
+                    <div class="form-group row align-items-center py-2 px-3 rounded mb-2 {{ $user->can_access_trade ? 'bg-success' : 'bg-danger' }}">
+                        <div class="col">
+                            <label class="mb-0 font-weight-medium">Trade Access</label>
+                            <small class="d-block text-light">Allow user to access trade features</small>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge {{ $user->can_access_trade ? 'badge-light' : 'badge-dark' }}">
+                                    {{ $user->can_access_trade ? 'Unlocked' : 'Locked' }}
+                            </span>
+                            <div class="custom-control custom-switch mt-1">
+                                <input type="checkbox" class="custom-control-input" id="canAccessTrade{{ $user->id }}" name="can_access_trade" value="1" @checked($user->can_access_trade)>
+                                <label class="custom-control-label" for="canAccessTrade{{ $user->id }}"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-success btn-sm">
+                        <i class="fas fa-save mr-1"></i> Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Transaction History Lock Modal -->
+<div class="modal fade" id="transactionsLockModal{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="transactionsLockModalLabel{{ $user->id }}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header border-bottom border-secondary">
+                <h5 class="modal-title" id="transactionsLockModalLabel{{ $user->id }}">
+                        <i class="fas fa-lock mr-2"></i> Transaction History Access Control
+                </h5>
+                <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="{{ route('admin.users.transactionsHistory.update', $user->id) }}" method="POST">
+                @csrf
+                @method('PUT')
+                <div class="modal-body">
+                    <div class="form-group row align-items-center py-2 px-3 rounded mb-2 {{ $user->can_access_transactions ? 'bg-success' : 'bg-danger' }}">
+                        <div class="col">
+                            <label class="mb-0 font-weight-medium">Transaction History Access</label>
+                            <small class="d-block text-light">Allow user to access transaction history</small>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge {{ $user->can_access_transactions ? 'badge-light' : 'badge-dark' }}">
+                                    {{ $user->can_access_transactions ? 'Unlocked' : 'Locked' }}
+                            </span>
+                            <div class="custom-control custom-switch mt-1">
+                                <input type="checkbox" class="custom-control-input" id="canAccessTransactions{{ $user->id }}" name="can_access_transactions" value="1" @checked($user->can_access_transactions)>
+                                <label class="custom-control-label" for="canAccessTransactions{{ $user->id }}"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-success btn-sm">
+                        <i class="fas fa-save mr-1"></i> Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Settings Lock Modal -->
+<div class="modal fade" id="settingsLockModal{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="settingsLockModalLabel{{ $user->id }}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header border-bottom border-secondary">
+                <h5 class="modal-title" id="settingsLockModalLabel{{ $user->id }}">
+                        <i class="fas fa-lock mr-2"></i> Settings Access Control
+                </h5>
+                <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="{{ route('admin.users.settings.update', $user->id) }}" method="POST">
+                @csrf
+                @method('PUT')
+                <div class="modal-body">
+                    <div class="form-group row align-items-center py-2 px-3 rounded mb-2 {{ $user->can_access_settings ? 'bg-success' : 'bg-danger' }}">
+                        <div class="col">
+                            <label class="mb-0 font-weight-medium">Settings Access</label>
+                            <small class="d-block text-light">Allow user to access settings</small>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge {{ $user->can_access_settings ? 'badge-light' : 'badge-dark' }}">
+                                    {{ $user->can_access_settings ? 'Unlocked' : 'Locked' }}
+                            </span>
+                            <div class="custom-control custom-switch mt-1">
+                                <input type="checkbox" class="custom-control-input" id="canAccessSettings{{ $user->id }}" name="can_access_settings" value="1" @checked($user->can_access_settings)>
+                                <label class="custom-control-label" for="canAccessSettings{{ $user->id }}"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-success btn-sm">
+                        <i class="fas fa-save mr-1"></i> Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Other Lock Modal -->
+<div class="modal fade" id="otherLockModal{{ $user->id }}" tabindex="-1" role="dialog" aria-labelledby="otherLockModalLabel{{ $user->id }}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark text-light">
+            <div class="modal-header border-bottom border-secondary">
+                <h5 class="modal-title" id="otherLockModalLabel{{ $user->id }}">
+                        <i class="fas fa-lock mr-2"></i> Other Access Control
+                </h5>
+                <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form action="{{ route('admin.users.other.update', $user->id) }}" method="POST">
+                @csrf
+                @method('PUT')
+                <div class="modal-body">
+                    <div class="form-group row align-items-center py-2 px-3 rounded mb-2 {{ $user->can_access_other ? 'bg-success' : 'bg-danger' }}">
+                        <div class="col">
+                            <label class="mb-0 font-weight-medium">Other Access</label>
+                            <small class="d-block text-light">Allow user to access other features</small>
+                        </div>
+                        <div class="col-auto">
+                            <span class="badge {{ $user->can_access_other ? 'badge-light' : 'badge-dark' }}">
+                                    {{ $user->can_access_other ? 'Unlocked' : 'Locked' }}
+                            </span>
+                            <div class="custom-control custom-switch mt-1">
+                                <input type="checkbox" class="custom-control-input" id="canAccessOther{{ $user->id }}" name="can_access_other" value="1" @checked($user->can_access_other)>
+                                <label class="custom-control-label" for="canAccessOther{{ $user->id }}"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-top border-secondary">
+                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-success btn-sm">
+                        <i class="fas fa-save mr-1"></i> Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
                 </div>
             </div>
 <div class="row">

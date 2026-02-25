@@ -53,9 +53,15 @@ class User extends Authenticatable
         'referred_by',
         'email_verified_at',
         'password',
-         'can_deposit',
+        'can_deposit',
         'can_withdraw',
         'can_intra_transfer',
+        'can_access_plans',
+        'can_access_stocks',
+        'can_access_trade',
+        'can_access_transactions',
+        'can_access_settings',
+        'can_access_other',
 
     ];
 
@@ -79,9 +85,15 @@ class User extends Authenticatable
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
-             'can_deposit' => 'boolean',
+            'can_deposit' => 'boolean',
             'can_withdraw' => 'boolean',
             'can_intra_transfer' => 'boolean',
+            'can_access_plans' => 'boolean',
+            'can_access_stocks' => 'boolean',
+            'can_access_trade' => 'boolean',
+            'can_access_transactions' => 'boolean',
+            'can_access_settings' => 'boolean',
+            'can_access_other' => 'boolean',
         ];
     }
 

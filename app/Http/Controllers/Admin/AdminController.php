@@ -21,8 +21,62 @@ use App\Mail\TransactionNotificationMail;
 use App\Mail\SupportTransactionMail;
 use Illuminate\Support\Facades\Validator;
 
-class AdminController extends Controller
-{
+
+class AdminController extends Controller {
+
+    // Update Plans Access
+    public function updatePlans(Request $request, User $user)
+    {
+        $user->update([
+            'can_access_plans' => $request->has('can_access_plans'),
+        ]);
+        return redirect()->back()->with('message', 'Plans access updated.');
+    }
+
+    // Update Stocks Access
+    public function updateStocks(Request $request, User $user)
+    {
+        $user->update([
+            'can_access_stocks' => $request->has('can_access_stocks'),
+        ]);
+        return redirect()->back()->with('message', 'Stock markets access updated.');
+    }
+
+    // Update Trade Access
+    public function updateTrade(Request $request, User $user)
+    {
+        $user->update([
+            'can_access_trade' => $request->has('can_access_trade'),
+        ]);
+        return redirect()->back()->with('message', 'Trade access updated.');
+    }
+
+    // Update Transaction History Access
+    public function updateTransactionsHistory(Request $request, User $user)
+    {
+        $user->update([
+            'can_access_transactions' => $request->has('can_access_transactions'),
+        ]);
+        return redirect()->back()->with('message', 'Transaction history access updated.');
+    }
+
+    // Update Settings Access
+    public function updateSettings(Request $request, User $user)
+    {
+        $user->update([
+            'can_access_settings' => $request->has('can_access_settings'),
+        ]);
+        return redirect()->back()->with('message', 'Settings access updated.');
+    }
+
+    // Update Other Access
+    public function updateOther(Request $request, User $user)
+    {
+        $user->update([
+            'can_access_other' => $request->has('can_access_other'),
+        ]);
+        return redirect()->back()->with('message', 'Other access updated.');
+    }
     /**
      * Display the admin dashboard with a list of all users.
      *
