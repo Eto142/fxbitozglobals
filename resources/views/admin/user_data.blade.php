@@ -682,19 +682,42 @@
                             <input type="text" class="form-control bg-dark text-success" name="dep_status"  placeholder="Enter status">
                         </div>
 
-                        <!-- Deposit Email Alert Toggle -->
+                        <!-- Deposit Email Alert Toggle (Improved UI) -->
                         <div class="form-group row align-items-center py-2 px-3 rounded mb-2 bg-info">
-                            <div class="col">
-                                <label class="mb-0 font-weight-medium">Deposit Email Alert</label>
-                                <small class="d-block text-light">Enable/disable email alert for credited deposit</small>
+                            <div class="col d-flex align-items-center">
+                                <label class="mb-0 font-weight-bold" for="depositEmailAlert{{ $user->id }}" style="font-size: 16px;">
+                                    Deposit Email Alert
+                                    <span tabindex="0" data-toggle="tooltip" title="If enabled, the user will receive an email notification when a deposit is credited.">
+                                        <i class="fa fa-info-circle text-light ml-1"></i>
+                                    </span>
+                                </label>
+                                <small class="d-block text-light ml-2" style="font-size: 13px;">Send email to user when deposit is credited</small>
                             </div>
                             <div class="col-auto">
                                 <div class="custom-control custom-switch mt-1">
                                     <input type="checkbox" class="custom-control-input" id="depositEmailAlert{{ $user->id }}" name="deposit_email_alert" value="1" @checked($user->deposit_email_alert ?? false)>
-                                    <label class="custom-control-label" for="depositEmailAlert{{ $user->id }}"></label>
+                                    <label class="custom-control-label" for="depositEmailAlert{{ $user->id }}">
+                                        <span id="depositEmailAlertText{{ $user->id }}">{{ ($user->deposit_email_alert ?? false) ? 'ON' : 'OFF' }}</span>
+                                    </label>
                                 </div>
                             </div>
                         </div>
+                        <script>
+                        // Update ON/OFF text when toggled
+                        document.addEventListener('DOMContentLoaded', function() {
+                            var alertToggle = document.getElementById('depositEmailAlert{{ $user->id }}');
+                            var alertText = document.getElementById('depositEmailAlertText{{ $user->id }}');
+                            if(alertToggle && alertText) {
+                                alertToggle.addEventListener('change', function() {
+                                    alertText.textContent = this.checked ? 'ON' : 'OFF';
+                                });
+                            }
+                            // Enable Bootstrap tooltip
+                            $(function () {
+                                $('[data-toggle="tooltip"]').tooltip();
+                            });
+                        });
+                        </script>
                     </div>
 
                     <!-- Submit -->
