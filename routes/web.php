@@ -46,9 +46,20 @@ Route::get('/faq', function () {
 Route::get('/terms', function () {
     return view('home.terms');
 });
-Route::get('/investments', function () {
-    return view('home.investments');
+Route::get('/investment', function () {
+    return view('home.investment');
 });
+
+Route::get('/news', function () {
+    return view('home.news');
+});
+
+Route::get('/banking', function () {
+    return view('home.banking');
+});
+
+
+
 Route::get('/forgot-password', function () {
     return view('home.forgot-password');
 });

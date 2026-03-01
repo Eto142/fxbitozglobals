@@ -1,350 +1,121 @@
-@include('home.header');
-<article class="main-layout__content">
-  <!-- Begin page-->
-  <!---->
-  <section class="page-intro page-intro-company">
-    <div class="container container-large">
-      <h1 class="page-intro__title">RELIABLE INVESTMENT WITH fxbitozglobals.com<br></h1><br><br>
-      <h1 class="page-intro__title" style="color: #69e2b0;">About us</h1>
-      <div class="page-intro__description">
-        <p><span class="color-primary">GET LIFE INCOME</span></p>
-      </div>
-
-      <style>
-        #class {
-          max-width: 100%;
-          font-size: 20px;
-          text-align: center;
-        }
-
-        #classs {
-          max-width: 100%;
-          font-size: 30px;
-          text-align: center;
-        }
-      </style>
-      <div class="page-intro__text">
-        <h1 class="page-intro__title" id="class" style="color: #fff;">fxbitozglobals.com PROFESSIONAL BANKING TEAM<br>CRYPTO INDUSTRY
-          DEVELOPERS</h1>
-        <div class="typography">
-          <p> Our company has been giving professional financial services globally and making it easier for cryptocurrency investment and banking activities for the past 18 years. They have created a unique robot that generates daily profit
-            and guesses the steps of the Bitcoin value. That is why the fxbitozglobals robot is able to benefit at
-            any stage of the market: both growth and decline. This development is unique in that it is the first in the
-            world. Today, not many people know about this. That is why they are given the chance to receive a stable
-            income for the rest of their lives. Many people will try to fake it in fraudulent ways after the platform is
-            known around the world. But we assure that only our company fxbitozglobals is unique. </p>
-
-          <p>
-          <p> Due to its widespread use as filler text for layouts, non-readability is of great importance.</p>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!---->
-  <section class="company">
-    <div class="container container-large">
-      <div class="company__block">
-        <div class="company__row">
-          <div class="company__col">
-            <div class="certificate"> <img src="temp/custom/assets/images/company/cert.jpg" alt="">
+@include('home.navbar')
+        <!--=====================================-->
+        <!--=            Breadcrumb Start       =-->
+        <!--=====================================-->
+        <section class="breadcrumb-wrap">
+            <div class="breadcrumb-img1">
+                <img src="img/figure/figure79.png" alt="figure" width="223" height="109">
             </div>
-            <div class="company-info">
-              <!--<table>-->
-              <!--  <tbody>-->
-              <!--    <tr>-->
-              <!--      <td>-->
-              <!--        <p class="company-info__label">Reg name:-->
-              <!--        </p>-->
-              <!--      </td>-->
-              <!--      <td>fxbitozglobals.com</td>-->
-              <!--    </tr>-->
-              <!--    <tr>-->
-              <!--      <td>-->
-              <!--        <p class="company-info__label">Number:-->
-              <!--        </p>-->
-              <!--      </td>-->
-              <!--      <td><a href="#" target="_blank">#13699699</a></td>-->
-              <!--    </tr>-->
-              <!--    <tr>-->
-              <!--      <td>-->
-              <!--        <p class="company-info__label">Official address:-->
-              <!--        </p>-->
-              <!--      </td>-->
-              <!--      <td>3051 N D St-->
-              <!--        San Bernardino, California(CA), 92405</td>-->
-              <!--    </tr>-->
-              <!--  </tbody>-->
-              <!--</table>-->
+            <div class="breadcrumb-img2">
+                <img src="img/figure/figure78.png" alt="figure" width="185" height="56">
             </div>
-          </div>
-          <div class="company__col">
-            <h3 class="company__title">Officially registered <strong>company</strong>
-            </h3>
-            <p class="company__count"><a href="#">#13699699</a>
-            </p>
-            <div class="typography">
-              <blockquote>fxbitozglobals.com - USA LEGAL REGISTRATION <a href="#">?13699699</a></blockquote>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!---->
-  <section class="text-columns">
-    <div class="container">
-      <h1 class="page-intro__title" id="classs" style="color: #69e2b0;">fxbitozglobals.com's STATS</h1>
-      <div class="typography">
-        <p> Here are online statistics of our company. Competent distribution of investments in the
-          fxbitozglobals robot allows you to maximize profits at all stages of the market. Gradual development is a
-          guarantee of world recognition in the market. It is important for us to ensure the protection of our
-          investors, as well as the stability and uninterrupted operation of the platform. Our robot is fully automated
-          to operate without user intervention.</p>
-      </div>
-    </div>
-  </section>
-  <section class="counters">
-    <div class="container">
-      <div class="counters__slider swiper-container swiper-no-swiping js-swiper-counters">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="count-item">
-              <div class="count-item__icon" style="width: 100%;">
-                <svg class="svg-icon">
-                  <use href="temp/custom/assets/icons/sprite.svg#icon-002-pie-chart"></use>
-                </svg>
-              </div>
-              <p class="count-item__value" style="width: 100%;text-align: center;">2077 </p>
-              <div class="count-item__description" style="max-width: 100%;text-align: center;">
-                <p>Days in Work</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="count-item">
-              <div class="count-item__icon" style="width: 100%;">
-                <svg class="svg-icon">
-                  <use href="temp/custom/assets/icons/sprite.svg#icon-003-people"></use>
-                </svg>
-              </div>
-              <p class="count-item__value" style="width: 100%;text-align: center;">89650 </p>
-              <div class="count-item__description" style="max-width: 100%;text-align: center;">
-                <p>Total Members</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="count-item">
-              <div class="count-item__icon" style="width: 100%;">
-                <svg class="svg-icon">
-                  <use href="temp/custom/assets/icons/sprite.svg#icon-001-money"></use>
-                </svg>
-              </div>
-              <p class="count-item__value" style="width: 100%;text-align: center;">338400989 <sub>USD</sub>
-              </p>
-              <div class="count-item__description" style="max-width: 100%;text-align: center;">
-                <p>Total Invested</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="count-item">
-              <div class="count-item__icon" style="width: 100%;">
-                <svg class="svg-icon">
-                  <use href="temp/custom/assets/icons/sprite.svg#icon-004-withdraw"></use>
-                </svg>
-              </div>
-              <p class="count-item__value" style="width: 100%;text-align: center;">101689885<sub>USD</sub>
-              </p>
-              <div class="count-item__description" style="max-width: 100%;text-align: center;">
-                <p>Total Paid</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!---->
-  <section class="investment">
-    <div class="container">
-      <div class="investment__row">
-        <div class="investment__col">
-          <div class="section-intro">
-            <h3 class="title">REFERRAL PROGRAM </h3>
-            <div class="section-intro__description">
-              <p>Anyone can take part in the affiliate program. It allows you to receive generous rewards by inviting
-                new members</p>
-            </div>
-          </div>
-          <ul class="investment-stats">
-            <li>
-              <p class="title">4 LEVELS OF REFERRAL PROGRAM </p>
-              <div class="section-intro__description">
-                <p>Get extra profit when people in your structure invite new investors to the company</p>
-              </div>
-            </li>
-            <li>
-              <p class="investment-stats__count gradient-text" style="font-size: 75px;">7<sup>%</sup> -
-                3<sup>%</sup><br>2<sup>%</sup> - 1<sup>%</sup></p>
-            </li>
-          </ul>
-        </div>
-        <div class="investment__col">
-          <svg class="svg-icon">
-            <use href="temp/custom/assets/icons/sprite.svg#icon-play"></use>
-          </svg></span></span><img src="temp/custom/assets/images/investment/notebook.png" alt=""></a>
-        </div>
-      </div>
-      <div class="investment__slider swiper-container swiper-no-swiping js-swiper-advantages">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="advantages-item">
-              <div class="advantages-item__icon" style="width: 100%;">
-                <svg class="svg-icon">
-                  <use href="temp/custom/assets/icons/sprite.svg#icon-002-24-hours"></use>
-                </svg>
-              </div>
-              <div class="advantages-item__description" style="text-align: center;">
-                <p>ROBOT TRADING WITHOUT WEEKENDS AND HOLIDAYS</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="advantages-item">
-              <div class="advantages-item__icon" style="width: 100%;">
-                <svg class="svg-icon">
-                  <use href="temp/custom/assets/icons/sprite.svg#icon-003-transfer"></use>
-                </svg>
-              </div>
-              <div class="advantages-item__description" style="text-align: center;">
-                <p>WITHDRAWAL 24/7</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="advantages-item">
-              <div class="advantages-item__icon" style="width: 100%;">
-                <svg class="svg-icon">
-                  <use href="temp/custom/assets/icons/sprite.svg#icon-001-wallet"></use>
-                </svg>
-              </div>
-              <div class="advantages-item__description" style="text-align: center;">
-                <p>BIG NUMBER OF PAYMENT SYSTEMS</p>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="advantages-item">
-              <div class="advantages-item__icon" style="width: 100%;">
-                <svg class="svg-icon">
-                  <use href="temp/custom/assets/icons/sprite.svg#icon-004-user"></use>
-                </svg>
-              </div>
-              <div class="advantages-item__description" style="text-align: center;">
-                <p>100% ANONYMOUS AND TRANSPARENCY OF THE WORK OF THE ROBOT</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="payments-and-footer-wrapper">
-    <div class="payments-and-footer-wrapper__inner" style="padding-top: 70px;">
-      <section class="payments" style="margin-bottom: 20px;">
-        <div class="container">
-          <div class="payments__row">
-            <div class="payments__col"> <img src="temp/custom/assets/images/payments/payment.png" alt="">
-            </div>
-            <div class="payments__col">
-              <div class="payments__content">
-                <div class="section-intro">
-                  <h3 class="title">PAYMENT SYSTEMS </h3>
-                  <div class="section-intro__description">
-                    <p>fxbitozglobals  supports a big number of payment systems</p>
-                  </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="breadcrumb-box">
+                            <h1 class="page-title">About us</h1>
+                            <nav>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">About</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-                <div class="typography">
-                  <p>Our company does not charge commissions for opening a deposit, as well as withdrawing funds from
-                    the platform</p>
-                </div>
-                <div class="payments__buttons">
-
-                  <a class="btn btn--line-primary" href="{{route('login')}}"><span>INVEST</span></a>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
+        </section>
+        <!--=====================================-->
+        <!--=            Consulting Start       =-->
+        <!--=====================================-->
+        <section class="consulting-service-wrap1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="consulting-service1">
+                            <h2 class="section-title">Who We Are?<br>
+							Our relationships are built on trust that we build every day through every interaction.
+							</h2>
+							                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="consulting-service2">
+                            <p><br>
+							
+							Our employees are empowered to do the right thing to ensure they share our customers’ vision for success. We work as a partner to provide financial products and services that make banking safe, simple and convenient. We’re here to help navigate important milestones and strengthen futures together.
 
 
-
-  <div id="button-up">
-    <i class="fa fa-chevron-up"></i>
-  </div>
-  <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min-2.html">
-  <style>
-    #button-up {
-      display: none;
-      position: fixed;
-      right: 20px;
-      bottom: 60px;
-      color: #000;
-      background-color: white;
-      text-align: center;
-      font-size: 30px;
-      padding: 3px 10px 10px 10px;
-      transition: .3s;
-      border-radius: 50px;
-      width: 50px;
-      height: 50px;
-      z-index: 9999;
-    }
-
-    #button-up:hover {
-      cursor: pointer;
-      background-color: #E8E8E8;
-      transition: .3s;
-    }
-  </style>
-  <script>
-    $(document).ready(function() { 
-var button = $('#button-up');	
-$(window).scroll (function () {
-if ($(this).scrollTop () > 300) {
-button.fadeIn();
-} else {
-button.fadeOut();
-}
-});	 
-button.on('click', function(){
-$('body,').animate({
-scrollTop: 0
-}, 800);
-return false;
-});		 
-});
-  </script>
-  <script></script>
-
-
-  <div class="payments-and-footer-wrapper">
-    <div class="payments-and-footer-wrapper__inner" style="padding: 0;">
-      <!---->
-      <!-- footer -->
-      <!-- this is the begining of the footer section  -->
-
-
-      <div class="gtranslate_wrapper"></div>
-      <script>
-        window.gtranslateSettings = {"default_language":"en","wrapper_selector":".gtranslate_wrapper"}
-      </script>
-      <script src="../../../cdn.gtranslate.net/widgets/latest/float.js" defer></script>
-
-      @include('home.footer');
+							
+							</p>
+                        </div>
+                    </div>
+                </div>
+				
+				
+				
+				<div class="row">
+                    <div class="col-lg-12">
+                        <div class="consulting-service1">
+                            <h2 class="section-title">What We Offer?<br>
+							From your home and rental properties to REITS and mortgage-backed securities, here are few things to consider as you explore real estate investment opportunities.
+							</h2>
+					
+					<p>Our diverse business mix is fundamental in delivering a consistent, predictable and repeatable financial performance year after year.	
+					Our core businesses include Consumer & Business Banking, Corporate & Commercial Banking, Payment Services and Wealth Management & Investment Services. Through our banking philosophy, we are able to bring the power of the whole bank to every customer, every single day.</p>
+					   </div>
+                    </div>                    
+                </div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="consulting-service3" data-bg-image="img/service/service1.jpg" width="555" height="299">
+                            <div class="media">
+                                <div class="item-img">
+                                    <img src="img/figure/figure18.png" alt="figure" width="87" height="95">
+                                    <div class="service-img">
+                                        <img src="img/figure/figure46.png" alt="service" width="86" height="94">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="title-heading"><a href="#">Yes, it’s secure.</a></h3>
+                                    <p>We’ve got your back. We’re so confident in our mobile and online banking security measures, we put it in writing.</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="consulting-service3" data-bg-image="img/service/service1.jpg" width="555" height="299">
+                            <div class="media">
+                                <div class="item-img">
+                                    <img src="img/figure/figure21.png" alt="figure" width="76" height="93">
+                                    <div class="service-img service-img2">
+                                        <img src="img/figure/figure47.png" alt="service" width="76" height="93">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <h3 class="title-heading"><a href="#">Right here, right now</a></h3>
+                                    <p>Need to deposit a check? Send money to a friend? Pay your bills on time? Explore additional account solutions? Our secure digital banking tools make managing your money fast and easy. In the U.S. Bank Mobile App or online, it's all at your fingertips – right here, right now.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                   
+                   
+                </div>
+            </div>
+        </section>
+       
+          @include('home.nav_footer')
